@@ -24,7 +24,7 @@ test.afterEach(async ({ page }) => {
 
 test('OrangeHRM Logout Functionality @master @sanity @regression', async () => {
 
-    test.setTimeout(50000); // Set timeout to 30 seconds
+    test.setTimeout(40000); // Set timeout to 30 seconds
     // 2. Enter valid username and password.   
     await loginPage.enterUserName(config.Username);
     await loginPage.enterPassword(config.Password);
