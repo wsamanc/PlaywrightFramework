@@ -1,0 +1,30 @@
+{
+  "name": "playwrightframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:master": "npx playwright test --grep @master",
+    "test:regression": "npx playwright test --grep @regression",
+    "test:sanity": "npx playwright test --grep @sanity",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:datadriven": "npx playwright test --grep @dataDriven --headed --project=chromium",
+    "test:headed": "npx playwright test --headed",
+    "test:master:headed": "npx playwright test --grep @master --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:final": "npx playwright test --grep @master --workers=3 fullyparallel --reporter=list,html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.1.0",
+    "allure-playwright": "^3.4.5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.2.0",
+    "csv-parse": "^6.1.0",
+    "xlsx": "^0.18.5"
+  }
+}

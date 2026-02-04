@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11149","OrangeHRM Login Functionality","webkit","2026-01-31","passed","2026-01-31","","OrangeHRMLogin.spec.ts","",""
+"","15001","OrangeHRM Login Functionality","firefox","2026-01-31","passed","2026-01-31","","OrangeHRMLogin.spec.ts","",""
+"","11541","OrangeHRM Login Functionality @master @sanity @regression","chromium","2026-01-31","passed","2026-01-31","","OrangeHRMLogin.spec.ts","",""
+"","52231","OrangeHRM Login Functionality","chromium","2026-01-31","broken","2026-01-31","","OrangeHRMLogin.spec.ts","",""
