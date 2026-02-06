@@ -1,0 +1,46 @@
+Error during clicking profile image:  locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator(':text("manda user")')
+
+    at DashboardPage.clickProfileImage (C:\SamanWorkspace\PlaywrightDemos\PlaywrightFramework\pages\DashboardPage.ts:42:37)
+    at C:\SamanWorkspace\PlaywrightDemos\PlaywrightFramework\tests\OrangeHRMLogout.spec.ts:37:21 {
+  [Symbol(step)]: {
+    location: {
+      file: 'C:\\SamanWorkspace\\PlaywrightDemos\\PlaywrightFramework\\pages\\DashboardPage.ts',
+      line: 42,
+      column: 37,
+      function: 'DashboardPage.clickProfileImage'
+    },
+    category: 'pw:api',
+    title: `Click locator(':text("manda user")')`,
+    apiName: 'locator.click',
+    params: { selector: ':text("manda user")', strict: true, timeout: 0 },
+    group: undefined,
+    stepId: 'pw:api@41',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@41',
+      _title: `Click locator(':text("manda user")')`,
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1770200247020,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator(':text("manda user")')\x1B[22m\n`,
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator(':text("manda user")')\x1B[22m\n` +
+        '\n' +
+        '    at DashboardPage.clickProfileImage (C:\\SamanWorkspace\\PlaywrightDemos\\PlaywrightFramework\\pages\\DashboardPage.ts:42:37)\n' +
+        '    at C:\\SamanWorkspace\\PlaywrightDemos\\PlaywrightFramework\\tests\\OrangeHRMLogout.spec.ts:37:21',
+      cause: undefined
+    }
+  }
+}

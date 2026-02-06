@@ -17,11 +17,13 @@ export default defineConfig({
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-//  forbidOnly: !!process.env.CI,
+  //  forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  //retries: process.env.CI ? 2 : 0,
+  retries: 2,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  //  workers: process.env.CI ? 1 : undefined,
+  workers: 2,
   // fullyParallel: true, retries: process.env.CI ? 2 : 0,workers: process.env.CI ? 1 : undefined, planned to config at runtime
   // may be in package.json scripts or command line level
   // "scripts": {
@@ -31,8 +33,8 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // can add multiple report formats
   reporter: [
-    ['html', { outputFolder: '../reports/html-report'}],
-    ['allure-playwright', { outputFolder: '../reports/allure-results'}],
+    ['html', { outputFolder: '../reports/html-report' }],
+    ['allure-playwright', { outputFolder: '../reports/allure-results' }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -44,7 +46,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     // headless: false, // newly added to see the browser action
-    viewport: { width: 1280, height: 720  }, // newly added to set viewport size
+    viewport: { width: 1280, height: 720 }, // newly added to set viewport size
     ignoreHTTPSErrors: true, // newly added to ignore https errors
     permissions: ['geolocation'], // newly added to grant geolocation permission
   },

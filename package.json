@@ -6,8 +6,8 @@
   "scripts": {
     "test:master": "npx playwright test --grep @master",
     "test:regression": "npx playwright test --grep @regression",
-    "test:sanity": "npx playwright test --grep @sanity",
-    "test:smoke": "npx playwright test --grep @smoke",
+    "test:sanity": "npx playwright test --grep @sanity --headed --project=chromium",
+    "test:smoke": "npx playwright test --grep @smoke --headed --project=chromium",
     "test:datadriven": "npx playwright test --grep @dataDriven --headed --project=chromium",
     "test:headed": "npx playwright test --headed",
     "test:master:headed": "npx playwright test --grep @master --headed",

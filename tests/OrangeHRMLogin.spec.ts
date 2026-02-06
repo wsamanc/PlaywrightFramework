@@ -37,7 +37,7 @@ test.afterEach(async ({ page }) => {
     await page.close();
 });
 
-test('OrangeHRM Login Functionality @master @sanity @regression', async () => {
+test('OrangeHRM Login Functionality @smoke @master @sanity @regression', async () => {
 
     test.setTimeout(50000); // Set timeout to 30 seconds
     //  expect(await loginPage.isLoginPageExists()).toBeTruthy();
